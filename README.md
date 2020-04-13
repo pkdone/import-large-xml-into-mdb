@@ -18,7 +18,7 @@ Example:
 
 ## Examples
 
-Some test / sample XML files are provided in the _test_ sub-folder of this project and a test Shell script _example_load_data.sh_ is provided in the root folder of this project to show examples of importing the example XML files into a MongoDB database.
+Some test / sample XML files are provided in the __test__ sub-folder of this project and a test Shell script __example_load_data.sh__ is provided in the root folder of this project to show examples of importing the example XML files into a MongoDB database.
 
 ## Further Information
 
