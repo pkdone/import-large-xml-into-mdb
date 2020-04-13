@@ -3,7 +3,7 @@
 # EXAMPLES
 #
 
-# IMPORT TO SOME SAMPLE MUSIC ARTIST DATA FROM DISCOGS.COM
+# IMPORT TO MONGODB SOME SAMPLE MUSIC ARTIST DATA FROM DISCOGS.COM
 ./import-xml-into-mdb.py -f 'test/artists-test.xml' -r 'artists-behind-my-top-twelve-albums/artists/artist' -i 'images' -d testdb
 
 # IMPORT TO MONGODB USING VARIOUS TEST XML FILES
