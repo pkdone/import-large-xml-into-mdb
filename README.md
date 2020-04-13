@@ -6,7 +6,7 @@ Install Python XML & MongoDB Driver (PyMongo) libraries, eg:
 
     $ pip3 install --user pymongo lxml
 
-## Executing
+## Execution
 For usage first ensure the '.py' script is executable and then run:
 
     $ ./import-xml-into-mdb.py -h
