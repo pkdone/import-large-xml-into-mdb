@@ -6,7 +6,7 @@
 #
 #
 # Prerequisites:
-# * Install Python XML & Python libraries, eg:
+# * Install Python XML & MongoDB Driver (PyMongo)  libraries, eg:
 #  $ pip3 install --user pymongo lxml
 #
 #
