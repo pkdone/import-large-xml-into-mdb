@@ -1,0 +1,16 @@
+<data>
+    <main>
+        <thing>
+            <name>Bob</name>
+        </thing>
+        <thing>
+            <name>Bob</name><type>Monster</type><name>Alice</name>
+        </thing>
+        <nothing>
+            <name>Zombie</name>
+        </nothing>
+        <thing>
+            <name>Bob</name><type>Monster</type><name>Alice</name><type>Ogre</type>
+        </thing>
+    </main>
+</data>
