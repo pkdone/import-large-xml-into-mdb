@@ -14,7 +14,6 @@ For usage first ensure the '.py' script is executable and then run:
 Example:
 
     $ ./import-xml-into-mdb.py -f 'data/mydoc.xml' -r 'items/item' -d mydb -u 'mongodb+srv://usr:pwd@mycluster-a123z.mongodb.net'
-    ```
 
 ## Examples
 
@@ -33,7 +32,6 @@ For example the repeating XML branch:
      <thing><name>Bob</name></thing>
 
  ..is translated to the JSON/BSON of:
-
 
     {'thing': [{'name': ['Bob']}]}
 
