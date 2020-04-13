@@ -77,8 +77,8 @@ from pprint import pprint
 ##
 def main():
     argparser = argparse.ArgumentParser(description='Reads an XML file which contains repeating '
-                                        'elements directly under the root XML node importing '
-                                        'each into MongoDB as part of a repeating bulk insert')
+                                        'elements, importing each into MongoDB as part of a '
+                                        'repeating bulk insert')
     argparser.add_argument('-f', '--file', required=True,
                            help=f'The path of the XML file to import ')
     argparser.add_argument('-r', '--repeatingpath', required=True,
