@@ -62,7 +62,7 @@
 # threading to process sections of XML and insert into MongoDB. However it does insert large
 # batches of records, at a time, into MongoDB which helps performance. On a modern multi-core
 # laptop with SSD storage, running both this program and a single node MongoDB instance on the same
-# machine, an ingest rate of approximately 40k records is achievable (for records of size 181 bytes
+# machine, an ingest rate of approximately 40k records is achievable (for records of size 200 bytes
 # on average, with no secondary indexes defined).
 ##
 import argparse

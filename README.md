@@ -54,6 +54,6 @@ The alternative could be to not use an array any time only a single child elemen
      <sublabels> <label>Action Records</label> </sublabels>
      <sublabels> <label>Action Records</label> <label>Fizz Music</label> </sublabels>
 
-Performance of this program is based on a number of factors. The program does NOT use multi- threading to process sections of XML and insert into MongoDB. However it does insert large batches of records, at a time, into MongoDB which helps performance. On a modern multi-core laptop with SSD storage, running both this program and a single node MongoDB instance on the same machine, an ingest rate of approximately 40k records is achievable (for records of size 181 bytes on average, with no secondary indexes defined).
+Performance of this program is based on a number of factors. The program does NOT use multi- threading to process sections of XML and insert into MongoDB. However it does insert large batches of records, at a time, into MongoDB which helps performance. On a modern multi-core laptop with SSD storage, running both this program and a single node MongoDB instance on the same machine, an ingest rate of approximately 40k records is achievable (for records of size 200 bytes on average, with no secondary indexes defined).
 
 
