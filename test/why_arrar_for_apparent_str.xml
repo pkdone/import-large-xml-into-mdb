@@ -1,0 +1,42 @@
+<root>
+<labels>
+    <label>
+        <images><image height="24" type="primary" uri="" uri150="" width="132"/></images>
+
+        <id>1</id>
+
+        <name>Planet E</name>
+    
+        <profile>[Classic techno label founded in 1991</profile>
+
+        <name>OH MAYBE I WANY A DIFFERENT NAME - HOW WOULD I HAVE KNOWN?</name>
+
+        <data_quality>Correct</data_quality>
+
+        <sublabels>
+            <label>Antidote (4)</label>
+            <label>Community Projects</label>
+            <label>Guilty Pleasures</label>
+            <label>I Ner Zon Sounds</label>
+            <label>Planet E Communications</label>
+            <label>Planet E Communications, Inc.</label>
+            <label>Planet E Productions</label>
+            <label>Twpenty</label>
+            <other>MIX IT UP!!</other>
+        </sublabels>
+
+        <data_quality>SLIPPED ANOTHER ONE IN</data_quality>
+
+        <sublabelswithmeta>
+            <label id="86537">Antidote (4)</label>
+            <label id="86537">Community Projects</label>
+            <label id="86537">Guilty Pleasures</label>
+            <label id="31405">I Ner Zon Sounds</label>
+            <label id="277579">Planet E Communications</label>
+            <label id="294738">Planet E Communications, Inc.</label>
+            <label id="1560615">Planet E Productions</label>
+            <label id="488315">TWPENTY</label>
+        </sublabelswithmeta>
+    </label>
+</labels>
+</root>

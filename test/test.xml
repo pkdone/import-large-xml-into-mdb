@@ -1,0 +1,41 @@
+ <labels>
+        <label>
+          <B1 p="q"></B1>
+          <C>X<D>Y</D></C>
+          <E1></E1>
+        </label>
+        <label>
+          <C>X<D>Y</D></C>
+        </label>
+        <label>
+          <B2></B2>
+          <C>Z<D></D></C>
+          <E2></E2>
+        </label>
+        <label>
+          <C f="g">X</C>
+        </label>
+        <label>
+          <C val="g">X</C>
+        </label>
+        <label>
+          <HS K='9'>
+            <K>1</K>
+            <L>1</L>
+            <K>2</K>
+            <K>3</K>
+            <L>2</L>
+            <L>3</L>
+          </HS>
+        </label>
+        <label>
+          <S val='456'>
+            123
+          </S>
+        </label>
+        <label n='m'>
+          <l>lll</l>
+        </label>
+        <label u='v'/>
+        <label/>
+</labels>

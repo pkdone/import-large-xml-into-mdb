@@ -1,0 +1,35 @@
+ <labels>
+        <label>A</label>
+        <label v='x'/>
+        <label/>
+        <label v='y'>
+          <l>B</l>
+        </label>
+        <label>
+          <l n='i'>D</l>
+          <l n='j'>E</l>
+        </label>
+        <label>
+          <l n='f'/>
+          <l n='g'/>
+        </label>
+        <label>
+          <l a='b'/>
+        </label>
+        <label>
+          <l>P</l>
+        </label>
+        <label>
+          <l>Q</l>
+          <l>R</l>
+        </label>
+        <label>
+          <s> <t>L</t> <t>M</t> <u>N</u> </s>
+        </label>
+        <label>
+            <lvl>
+              <l n='f'/>
+              <l n='g'/>
+            </lvl>
+        </label>
+</labels>
