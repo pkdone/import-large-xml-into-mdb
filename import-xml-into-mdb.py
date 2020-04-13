@@ -101,7 +101,6 @@ def main():
     argparser.add_argument('-u', '--url', default=DEFAULT_MONGODB_URL,
                            help=f'MongoDB Cluster URL (default: {DEFAULT_MONGODB_URL})')
     args = argparser.parse_args()
-
     axis_path = [itm.strip() for itm in args.repeatingpath.split('/')]
 
     if len(axis_path) < 2:
