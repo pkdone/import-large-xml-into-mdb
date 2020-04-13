@@ -175,8 +175,8 @@ def insert_array_elements_into_db(xml_filepath, axis_path, ignore_list, coll):
 
 
 ##
-# Taking an XML element recursively process its child XML elements adding them as a list of values
-# and then for the current XML element capture its attributes and text content returning appear
+# Taking an XML element, recursively process its child XML elements adding them as a list of values
+# and then for the current XML element capture its attributes and text content, returning them all
 ##
 def recurse_element_descending(elem, ignore_list, depth):
     result = {}
@@ -206,7 +206,7 @@ def recurse_element_descending(elem, ignore_list, depth):
 
 ##
 # Ensures the key doesn't exist in the dictionary before inserting it, by prefixing with one or
-# more underscores if it won't otherwise be unique
+# more underscores if it won't otherwise be unique (also if the value doesn't exist, doesn't bother
 ##
 def set_unique_key_val_if_exists(record_dict, key, value):
     if key and value:
@@ -220,7 +220,7 @@ def set_unique_key_val_if_exists(record_dict, key, value):
 
 ##
 # Walks the specific axis path in reverse order whilst walking the XML element's ancestry to check
-# if they match exactly up to the root of the XML document
+# if they both match with each other exactly, all the way up to the root of the XML document
 ##
 def is_matching_repeating_element(axis_path, elem):
     curr_elem = elem
