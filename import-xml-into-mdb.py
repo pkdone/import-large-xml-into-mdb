@@ -152,7 +152,7 @@ def insert_array_elements_into_db(xml_filepath, axis_path, ignore_list, coll):
 
             if record_dict:
                 if type(record_dict) is not dict:
-                    record_dict = {'val': record_dict}
+                    record_dict = {VALUE_FIELD_PREFIX: record_dict}
 
                 # pprint(record_dict)
                 records_batch.append(record_dict)
