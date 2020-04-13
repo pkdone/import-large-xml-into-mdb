@@ -16,6 +16,10 @@ Example:
     $ ./import-xml-into-mdb.py -f 'data/mydoc.xml' -r 'items/item' -d mydb -u 'mongodb+srv://usr:pwd@mycluster-a123z.mongodb.net'
     ```
 
+## Examples
+
+Some test / sample XML files are provided in the _test_ sub-folder of this project and a test Shell script _example_load_data.sh_ is provided in the root folder of this project to show examples of importing the example XML files into a MongoDB database.
+
 ## Further Information
 
 Works with very large XML files (eg. 10s GBs or more in size) regardless of how much RAM the host machine has by streaming the XML file in, and for each repeating XML branch processed, the XML branch is cleared from memory, before reading the next branch in, and so on. An earlier incarnation of this program used the common Python XML processing library, 'xmltodict', which would cause the program to crash for very large XML files with out of memory errors, due to it attempting to read the whole XML file into RAM all in one go.
