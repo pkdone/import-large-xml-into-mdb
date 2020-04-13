@@ -10,6 +10,7 @@
 #./import-xml-into-mdb.py -f 'test/simple.xml' -r 'labels/label' -d testdb -c simple
 #./import-xml-into-mdb.py -f 'test/thing1.xml' -r'data/main' -d testdb -c thing1
 #./import-xml-into-mdb.py -f 'test/thing2.xml' -r'data/main' -d testdb -c thing2
+#./import-xml-into-mdb.py -f 'test/thing3.xml' -r'data/main' -d testdb -c thing3
 #./import-xml-into-mdb.py -f 'test/test.xml' -r 'labels/label' -d testdb -c test
 #./import-xml-into-mdb.py -f 'test/labels.xml' -r 'labels/label' -i 'images' -d testdb
 #./import-xml-into-mdb.py -f 'test/deeper-labels.xml' -r 'main-doc/main-data/labels/label' -i 'images' -d testdb -c deeper_labels
