@@ -130,7 +130,7 @@ def run(xml_filepath, axis_path, ignore_list, url, dbname, collname):
     db = connection[dbname]
     coll = db[collname]
     coll.drop()
-    insert_array_elements_into_db(xml_filepath, axis_path, ignore_list, coll)
+    insert_each_branch_into_db(xml_filepath, axis_path, ignore_list, coll)
     print(f'Ingest duration: {int(time.time() - start)} secs')
 
 
@@ -139,7 +139,7 @@ def run(xml_filepath, axis_path, ignore_list, url, dbname, collname):
 # sets of resulting documents into groups, ingesting each batch into a MongoDB collection (and then
 # removing from RAM, before building out the next batch to process, and so on
 ##
-def insert_array_elements_into_db(xml_filepath, axis_path, ignore_list, coll):
+def insert_each_branch_into_db(xml_filepath, axis_path, ignore_list, coll):
     count = 0
     records_batch = []
     repeating_xml_name = axis_path[-1]
