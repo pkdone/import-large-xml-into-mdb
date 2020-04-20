@@ -52,6 +52,8 @@ The alternative could be to not use an array any time only a single child elemen
      <sublabels> <label>Action Records</label> </sublabels>
      <sublabels> <label>Action Records</label> <label>Fizz Music</label> </sublabels>
 
+__IMPORTANT__: By allowing for potential multiplicity of field values, as discussed, a single query/ filter construct can be used in MongoDB, for querying documents regardless of whether a particular field has a single or multiple values. However, this then potentially causes problems for applying compound indexes to the resulting collection if all "simple fields" are essentially regarded as arrays. For example: Attempting to run `db.masters.createIndex({'name': 1, 'type': -1})` on a collection will likely result in the error `cannot index parallel arrays [name] [type]`. Therefore it is likely that some sort of post-processing of the collection imported from XML will be required. For example, using the aggregation framework (potentially with $merge stage for appending) as the Transform (T) part of an Extract-Load-Transform (ELT) approach may be called for.
+
 Performance of this program is based on a number of factors. The program does NOT use multi-threading to process sections of XML and insert into MongoDB. However it does insert large batches of records, at a time, into MongoDB which helps performance. On a modern multi-core laptop with SSD storage, running both this program and a single node MongoDB instance on the same machine, an ingest rate of approximately 40k records is achievable (for records of size 200 bytes on average, with no secondary indexes defined).
 
 
